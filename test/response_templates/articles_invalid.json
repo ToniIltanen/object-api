@@ -1,0 +1,19 @@
+{
+    "datasources": [
+        "https://someapi.domain.com",
+        "https://someapi2.domain.com"
+    ],
+	"results": [{
+            "title" : 123,
+            "description": "Example description",
+            "resourceInfo": {
+                "link": "https://someapi.domain.com/articles/1",
+                "name": "https://someapi.domain.com"
+            }
+		},
+		{
+			"title": "Example title 2",
+			"description": "Example description 2"
+		}
+	]
+}
