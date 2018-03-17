@@ -20,6 +20,11 @@ To start tests, run:
 
     lein test
 
+## Docker
+
+Docker image is automatically built from the master branch as latest. 
+Image can be found at: https://hub.docker.com/r/toniiltanen/object-api/
+
 ## License
 
 Copyright © 2018 Toni Iltanen
