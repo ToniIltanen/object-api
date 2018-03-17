@@ -12,5 +12,8 @@
             "type": "string"
         }
     },
-    "required": ["link", "name"]
+    "required": [
+        "link",
+        "name"
+    ]
 }
