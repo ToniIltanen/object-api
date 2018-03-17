@@ -1,0 +1,27 @@
+{
+    "datasources": [
+        "https://someapi.domain.com",
+        "https://someapi2.domain.com"
+    ],
+	"results": [{
+            "firstName": "John",
+            "lastName": "Wayne",
+            "age": 55
+		},
+		{
+            "lastName": 123,
+            "articles": [{
+                "title": "Example title",
+                "description": "Example description",
+                "resourceInfo": {
+                    "link": "https://someapi.domain.com/articles/1",
+                    "name": "https://someapi.domain.com"
+                }
+            }],
+            "resourceInfo": {
+                "link": "https://someapi2.domain.com/users/1",
+                "name": "https://someapi2.domain.com"
+            }
+		}
+	]
+}
