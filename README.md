@@ -1,6 +1,6 @@
-# object-api
+# Object API
 
-FIXME
+Object API is a data harvester and response combiner for Restful services to create dynamic objects from multiple sources.
 
 ## Prerequisites
 
@@ -16,4 +16,6 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 Toni Iltanen
+
+Distributed under the MIT License
