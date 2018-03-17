@@ -18,7 +18,9 @@ To start a web server for the application, run:
 
 To start tests, run:
 
-    lein test
+    lein eftest
+
+(or run the original tester, lein test)
 
 ## Docker
 
