@@ -9,14 +9,7 @@
         "description": {
             "type": "string"
         },
-        "resource_link": {
-            "description": "Direct link to resource",
-            "type": "string",
-            "format": "uri"
-        },
-        "source": {
-            "type": "string"
-        }
+        "resourceInfo": {"type": "object","$ref": "file:src/object_api/schemas/resourceInfo.json" }
     },
-    "required": ["title", "description", "resource_link", "source"]
+    "required": ["title", "description", "resourceInfo"]
 }
