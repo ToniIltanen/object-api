@@ -1,6 +1,4 @@
 (ns object-api.schemas
-      (:use compojure.core)
-      (:use cheshire.core)
       (:use ring.util.response))
 
     ;; Returns all available type schemas
