@@ -13,6 +13,12 @@
             "description": "Age in years",
             "type": "integer",
             "minimum": 0
+        },
+        "articles": { "type" : "array",
+                      "items" : { 
+                        "type": "object",
+                        "$ref": "file:src/object_api/schemas/article.json"
+                    }
         }
     },
     "required": ["firstName", "lastName"]
