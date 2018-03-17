@@ -9,7 +9,14 @@
         "description": {
             "type": "string"
         },
-        "resourceInfo": {"type": "object","$ref": "file:src/object_api/schemas/resourceInfo.json" }
+        "resourceInfo": {
+            "type": "object",
+            "$ref": "file:src/object_api/schemas/resourceInfo.json"
+        }
     },
-    "required": ["title", "description", "resourceInfo"]
+    "required": [
+        "title",
+        "description",
+        "resourceInfo"
+    ]
 }
