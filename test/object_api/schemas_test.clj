@@ -1,16 +1,27 @@
 (ns object-api.schemas-test
   (:require [clojure.test :refer :all]
             [ring.mock.request :as mock]
-            [clojure.data.json :as json]
+            [webjure.json-schema.validator :refer [validate]]
+            [cheshire.core :as cheshire]
             [object-api.application :refer :all]))
 
+;; Result schema for every query response
+(def resultSchema (clojure.java.io/reader "./src/object_api/schemas/result.json"))
+
 (deftest schema-tests
-  ;;person.json only schema at this point
+
   (testing "available schemas"
     (is (= (app (mock/request :get "/schemas"))
       {:status  200
        :headers {"Content-Type" "application/json"}
-       :body    "[\"person.json\"]"})))
+       :body    "[\"article.json\",\"person.json\",\"result.json\"]"})))
+
   (testing "Schema not found"
     (let [response (app (mock/request :get "/schemas/foobar.json"))]
-      (is (= (:status response) 404)))))
+      (is (= (:status response) 404))))
+
+  (testing "Article results"
+      (def articles (clojure.java.io/reader "./test/response_templates/articles.json"))
+      (is (= (validate (cheshire/parse-stream resultSchema)
+                        (cheshire/parse-stream articles)) nil))))
+    
