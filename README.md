@@ -12,12 +12,13 @@ You will need [Leiningen][] 2.0.0 or above installed.
 
 To start a web server for the application, run:
 
-    ```lein ring server```
+    lein ring server
 
 ## Testing
 
-To start tests, run: 
-    ```lein test```
+To start tests, run:
+
+    lein test
 
 ## License
 
