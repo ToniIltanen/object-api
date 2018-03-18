@@ -1,4 +1,4 @@
-(ns object-api.schemas-test
+(ns object-api.schema-controller-test
   (:require [clojure.test :refer :all]
             [ring.mock.request :as mock]
             [webjure.json-schema.validator :refer [validate]]

@@ -1,4 +1,4 @@
-(ns object-api.schemas
+(ns object-api.controllers.schema-controller
       (:use ring.util.response))
 
     ;; Returns all available type schemas
