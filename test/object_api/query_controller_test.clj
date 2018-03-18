@@ -13,7 +13,7 @@
 
   (testing "Invalid Route test"
     (let [response (app (mock/request :get "/query"))]
-      (is (= (:status response) 404))))
+      (is (= 404 (:status response)))))
 
   (testing "Invalid Query schema test"
     (def invalid_query (clojure.java.io/reader "./test/request_templates/invalid_query.json"))
