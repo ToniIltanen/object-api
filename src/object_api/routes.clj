@@ -1,7 +1,7 @@
 (ns object-api.routes
       (:use compojure.core)
       (:require [compojure.route :as route]
-                [object-api.schemas :as schema]))
+                [object-api.controllers.schema-controller :as schema]))
 
     (defroutes app-routes
       (context "/schemas" [] (defroutes schema-routes
