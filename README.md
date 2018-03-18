@@ -2,6 +2,10 @@
 
 Object API is a data harvester and response combiner for Restful services to create dynamic objects from multiple sources.
 
+## Status
+
+Object API is still under development, and the first release is yet to come.
+
 ## Prerequisites
 
 You will need [Leiningen][] 2.0.0 or above installed.
