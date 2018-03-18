@@ -1,6 +1,6 @@
 # Object API
 
-Object API is a data harvester and response combiner for local or extern services to create dynamic objects from multiple sources and mapping the results together.
+Object API is a data harvester and response combiner for local or external services to create dynamic objects from multiple sources and mapping the results together.
 
 Object API *will* have and **awesome** queryscheme, which is based on: 
 
