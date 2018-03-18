@@ -15,7 +15,7 @@
     (is (= (app (mock/request :get "/schemas"))
       {:status  200
        :headers {"Content-Type" "application/json"}
-       :body    "[\"article.json\",\"person.json\",\"resourceInfo.json\",\"result.json\"]"})))
+       :body    "[\"article.json\",\"person.json\",\"query.json\",\"resourceInfo.json\",\"result.json\"]"})))
 
   (testing "Schema not found"
     (let [response (app (mock/request :get "/schemas/foobar.json"))]
