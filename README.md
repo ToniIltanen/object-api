@@ -1,6 +1,11 @@
 # Object API
 
-Object API is a data harvester and response combiner for Restful services to create dynamic objects from multiple sources.
+Object API is a data harvester and response combiner for local or extern services to create dynamic objects from multiple sources and mapping the results together.
+
+Object API *will* have and **awesome** queryscheme, which is based on: 
+    1) What type of main object do we want 
+    2) What external mapped data do you want to include on the main object
+    3) What filters you wish to assign on the main object query
 
 ## Status
 
